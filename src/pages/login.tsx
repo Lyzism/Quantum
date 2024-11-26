@@ -21,6 +21,15 @@ function LoginPage() {
       {/* Login form */}
       <div className="w-1/2 flex items-center justify-center">
         <div className="max-w-md w-full p-8">
+          <div className="flex justify-center mb-20">
+            <img
+              src="./logo.png"
+              alt="Logo"
+              width={80}
+              height={80}
+              className="h-55 w-60" // 55 px 60 px
+            />
+          </div>
           <h1 className="text-3xl font-bold mb-1">Login</h1>
           <p className="text-gray-500 mb-5">Enter your credentials to access your account</p>
           <form className="space-y-4">
@@ -50,7 +59,7 @@ function LoginPage() {
                 </button>
               </div>
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">
               Login
             </Button>
           </form>
