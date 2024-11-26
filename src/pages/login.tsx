@@ -21,17 +21,19 @@ function LoginPage() {
       {/* Login form */}
       <div className="w-1/2 flex items-center justify-center">
         <div className="max-w-md w-full p-8">
-          <h1 className="text-3xl font-bold mb-6">Login</h1>
+          <h1 className="text-3xl font-bold mb-1">Login</h1>
+          <p className="text-gray-500 mb-5">Enter your credentials to access your account</p>
           <form className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" placeholder="nama@example.com" required />
+              <Input id="email" type="email" placeholder="Enter email" required />
             </div>
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
               <div className="relative">
                 <Input 
                   id="password" 
+                  placeholder="Enter password"
                   type={showPassword ? "text" : "password"} 
                   required 
                 />
@@ -52,6 +54,9 @@ function LoginPage() {
               Login
             </Button>
           </form>
+          <div>
+            <p className="text-gray-500 mt-2 text-sm text-center">© Copyright Quantum 2024  </p>
+          </div>
         </div>
       </div>
     </div>
