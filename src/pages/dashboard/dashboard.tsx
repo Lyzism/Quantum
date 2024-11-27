@@ -26,7 +26,7 @@ function DashboardPage() {
             <CardTitle>Total Permissions</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-3xl font-bold">20</p>
+            <p className="text-3xl font-bold text-primary">20</p>
           </CardContent>
         </Card>
       </div>
